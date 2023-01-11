@@ -7,4 +7,4 @@ def new_excursion(excursion: models.Excursions) -> int:
                                      "VALUES(?,?,?,?) "
                                      "RETURNING id",
                                      (excursion.id, excursion.event, excursion.Chart, excursion.cost))
-    return
+    return new_id
