@@ -7,4 +7,4 @@ def new_service(service: models.Services) -> int:
                                      "VALUES(?,?,?) "
                                      "RETURNING id",
                                      (service.id, service.name, service.Price))
-    return
+    return new_id
