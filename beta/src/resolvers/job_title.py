@@ -7,4 +7,4 @@ def new_job_title(job_title: models.Job_title) -> int:
                                      "VALUES(?,?) "
                                      "RETURNING id",
                                      (job_title.id, job_title.name))
-    return
+    return new_id
