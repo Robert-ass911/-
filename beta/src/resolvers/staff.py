@@ -7,4 +7,4 @@ def new_staff(staff: models.Staff) -> int:
                                      "VALUES(?,?,?,?,?,?) "
                                      "RETURNING id",
                                      (staff.id, staff.Full_name, staff.Post, staff.Salary, staff.Education, staff.Phonenumber))
-    return
+    return new_id
