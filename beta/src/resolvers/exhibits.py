@@ -7,4 +7,4 @@ def new_exhibit(exhibit: models.Exhibits) -> int:
                                      "VALUES(?,?,?,?,?,?,?) "
                                      "RETURNING id",
                                      (exhibit.id, exhibit.name, exhibit.Quantity, exhibit.Date_of_receipt, exhibit.Condition, exhibit.author, exhibit.material))
-    return
+    return new_id
