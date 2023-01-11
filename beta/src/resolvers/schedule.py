@@ -7,4 +7,4 @@ def new_schedule(schedule: models.Schedule) -> int:
                                      "VALUES(?,?,?,?) "
                                      "RETURNING id",
                                      (schedule.id, schedule.Workschedule, schedule.time_of_the_event, schedule.Pavilion))
-    return
+    return new_id
