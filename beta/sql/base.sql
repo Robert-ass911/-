@@ -34,13 +34,13 @@ CREATE TABLE Services(
     Price VARCHAR(50)
 );
 
-CREATE TABLE staff(
+CREATE TABLE Staff(
     id INTEGER PRIMARY KEY,
     Full_name INTEGER NOT NULL,
     Post INTEGER,
     Salary INTEGER,
     Education INTEGER,
-    Phone number INTEGER,
+    Phone_number INTEGER,
     FOREIGN KEY(Full_name_id) REFERENCES Full_name(id)
                   ON DELETE CASCADE ON UPDATE NO ACTION,
     FOREIGN KEY(Post_id) REFERENCES Post(id)
