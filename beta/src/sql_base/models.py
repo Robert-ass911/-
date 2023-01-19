@@ -22,7 +22,7 @@ class Exhibits(BaseModel):
 
 class Schedule(BaseModel):
     id: Optional[int]
-    Work schedule: str
+    Work_schedule: str
     time_of_the_event: int
     Pavilion: str
 
@@ -38,10 +38,10 @@ class Services(BaseModel):
     Price: int
 
 
-class staff(BaseModel):
+class Staff(BaseModel):
     id: Optional[int]
     Full_name: str
     Post: str
     Salary: str
     Education: str
-    Phone number: str
+    Phone_number: str
